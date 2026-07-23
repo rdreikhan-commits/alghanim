@@ -57,6 +57,7 @@
                 <a href="#tentang" class="hover:text-white transition-colors">Tentang Kami</a>
                 <a href="#keunggulan" class="hover:text-white transition-colors">Keunggulan</a>
                 <a href="#program" class="hover:text-white transition-colors">Program Paket</a>
+                <a href="#brosur" class="hover:text-white transition-colors">Brosur</a>
                 <a href="#jadwal" class="hover:text-white transition-colors">Jadwal</a>
                 <a href="#galeri" class="hover:text-white transition-colors">Dokumentasi</a>
                 <a href="#legalitas" class="hover:text-white transition-colors">Legalitas</a>
@@ -86,6 +87,7 @@
             <a href="#tentang" class="block font-medium text-slate-300 hover:text-white">Tentang Kami</a>
             <a href="#keunggulan" class="block font-medium text-slate-300 hover:text-white">Keunggulan</a>
             <a href="#program" class="block font-medium text-slate-300 hover:text-white">Program Paket</a>
+            <a href="#brosur" class="block font-medium text-slate-300 hover:text-white">Brosur Umrah</a>
             <a href="#jadwal" class="block font-medium text-slate-300 hover:text-white">Jadwal Keberangkatan</a>
             <a href="#galeri" class="block font-medium text-slate-300 hover:text-white">Dokumentasi</a>
             <a href="#legalitas" class="block font-medium text-slate-300 hover:text-white">Legalitas & Kantor</a>
@@ -505,6 +507,75 @@
         </div>
     </section>
 
+    <!-- SECTION BROSUR RESMI UNGGULAN -->
+    <section id="brosur" class="py-24 bg-themeBlack text-white relative border-t border-slate-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-14">
+                <span class="text-xs font-bold tracking-widest text-slate-400 uppercase bg-slate-900 px-3 py-1.5 rounded-full border border-slate-800">Brosur Official 1448 H</span>
+                <h2 class="mt-4 text-3xl sm:text-4xl font-extrabold text-white">Brosur Umrah Bahagia Alghanim</h2>
+                <p class="mt-3 text-slate-400 text-base">Informasi rinci paket Umrah Bahagia 9 Hari, fasilitas full board, hotel pilihan, dan daftar kelengkapan ibadah.</p>
+            </div>
+
+            <div class="max-w-4xl mx-auto bg-themeDark p-6 sm:p-10 rounded-3xl border border-slate-800 shadow-2xl grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
+                <!-- Image Preview Left -->
+                <div class="lg:col-span-6 relative group overflow-hidden rounded-2xl border border-slate-700 bg-slate-900">
+                    <img src="./media/brosur_alghanim.jpg" 
+                         alt="Brosur Resmi Umrah Bahagia Alghanim" 
+                         class="w-full h-auto object-cover group-hover:scale-105 transition-transform duration-500 cursor-pointer"
+                         onclick="openBrochureModal()">
+                    <div class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center gap-3">
+                        <button onclick="openBrochureModal()" class="bg-white text-black font-bold text-xs px-4 py-2 rounded-full shadow-lg flex items-center gap-2">
+                            <i data-lucide="maximize-2" class="w-4 h-4"></i>
+                            <span>Perbesar Brosur</span>
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Info & Download Right -->
+                <div class="lg:col-span-6 space-y-6">
+                    <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-slate-800 text-slate-300 text-xs font-semibold border border-slate-700">
+                        <i data-lucide="file-text" class="w-4 h-4 text-white"></i>
+                        <span>Format Gambar HD High Quality</span>
+                    </div>
+
+                    <h3 class="text-2xl font-extrabold text-white">Umrah Bahagia Alghanim 9 Hari</h3>
+                    
+                    <ul class="space-y-3 text-sm text-slate-300">
+                        <li class="flex items-center gap-3">
+                            <i data-lucide="check" class="w-4 h-4 text-white shrink-0"></i>
+                            <span>DP Ringan Cukup <strong>Rp 3 Juta</strong> (Promo)</span>
+                        </li>
+                        <li class="flex items-center gap-3">
+                            <i data-lucide="check" class="w-4 h-4 text-white shrink-0"></i>
+                            <span>Penerbangan Direct <strong>Saudia Airlines</strong></span>
+                        </li>
+                        <li class="flex items-center gap-3">
+                            <i data-lucide="check" class="w-4 h-4 text-white shrink-0"></i>
+                            <span>Hotel Berbintang Makkah & Madinah Dekat Pelataran</span>
+                        </li>
+                        <li class="flex items-center gap-3">
+                            <i data-lucide="check" class="w-4 h-4 text-white shrink-0"></i>
+                            <span>Fasilitas All Include (Perlengkapan, Visa, Air Zamzam, Manasik)</span>
+                        </li>
+                    </ul>
+
+                    <div class="pt-2 flex flex-col sm:flex-row gap-4">
+                        <button onclick="openBrochureModal()" 
+                           class="inline-flex items-center justify-center gap-2 bg-white hover:bg-slate-200 text-black font-bold text-sm px-6 py-3.5 rounded-xl shadow-lg transition-all">
+                            <i data-lucide="eye" class="w-4 h-4"></i>
+                            <span>Lihat Full Brosur</span>
+                        </button>
+                        <a href="./media/brosur_alghanim.jpg" download="Brosur_Umrah_Bahagia_Alghanim.jpg"
+                           class="inline-flex items-center justify-center gap-2 bg-slate-800 hover:bg-slate-700 text-white font-semibold text-sm px-6 py-3.5 rounded-xl border border-slate-700 transition-all">
+                            <i data-lucide="download" class="w-4 h-4"></i>
+                            <span>Unduh Brosur (HD)</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <!-- SECTION 5: JADWAL KEBERANGKATAN 2026 -->
     <section id="jadwal" class="py-24 bg-themeBlack text-white relative border-t border-slate-800">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -763,7 +834,7 @@
         </div>
     </section>
 
-    <!-- SECTION 8: LEGALITAS RESMI PT. MDL 525 GROUP & LOKASI KANTO ALGHANIM -->
+    <!-- SECTION 8: LEGALITAS RESMI PT. MDL 525 GROUP & LOKASI KANTOR ALGHANIM -->
     <section id="legalitas" class="py-24 bg-themeDark text-white relative border-t border-slate-800">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="text-center max-w-3xl mx-auto mb-16">
@@ -1038,6 +1109,7 @@
                     <ul class="space-y-2 text-xs">
                         <li><a href="#tentang" class="hover:text-white transition-colors">Tentang Kami</a></li>
                         <li><a href="#program" class="hover:text-white transition-colors">Program Umrah</a></li>
+                        <li><a href="#brosur" class="hover:text-white transition-colors">Brosur Umrah</a></li>
                         <li><a href="#jadwal" class="hover:text-white transition-colors">Jadwal Keberangkatan</a></li>
                         <li><a href="#galeri" class="hover:text-white transition-colors">Dokumentasi</a></li>
                         <li><a href="#legalitas" class="hover:text-white transition-colors">Legalitas</a></li>
@@ -1079,6 +1151,24 @@
             Konsultasi WhatsApp
         </span>
     </button>
+
+    <!-- POPUP FULL BROCHURE LIGHTBOX MODAL -->
+    <div id="brochure-modal" class="fixed inset-0 z-50 hidden items-center justify-center bg-black/90 backdrop-blur-md p-4 transition-all overflow-y-auto">
+        <div class="relative max-w-4xl w-full my-8">
+            <button id="close-brochure-modal-btn" class="absolute -top-12 right-0 text-white hover:text-slate-300 p-2 rounded-full bg-slate-800 border border-slate-700 transition-colors">
+                <i data-lucide="x" class="w-6 h-6"></i>
+            </button>
+            <div class="rounded-2xl overflow-hidden border border-slate-700 shadow-2xl bg-slate-900">
+                <img src="./media/brosur_alghanim.jpg" alt="Full Brosur Resmi Umrah Bahagia Alghanim" class="w-full h-auto object-contain">
+            </div>
+            <div class="mt-4 flex items-center justify-between text-xs text-slate-400 px-2">
+                <span>Brosur Resmi Season 1448 H / 2026 M</span>
+                <a href="./media/brosur_alghanim.jpg" download="Brosur_Umrah_Bahagia_Alghanim.jpg" class="text-white hover:underline flex items-center gap-1">
+                    <i data-lucide="download" class="w-4 h-4"></i> Unduh File Gambar
+                </a>
+            </div>
+        </div>
+    </div>
 
     <!-- 1. POPUP WELCOME PROMO 24-HOUR COUNTDOWN (PERTAMA KALI BUKA WEBSITE) -->
     <div id="welcome-promo-modal" class="fixed inset-0 z-50 flex items-center justify-center bg-black/85 backdrop-blur-md p-4 transition-all">

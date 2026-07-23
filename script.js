@@ -96,7 +96,32 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 
-    // 5. Welcome Promo Pop-up & Synchronized 24-Hour Countdown Timer
+    // 5. Brochure Lightbox Modal Logic
+    const brochureModal = document.getElementById('brochure-modal');
+    const closeBrochureModalBtn = document.getElementById('close-brochure-modal-btn');
+
+    window.openBrochureModal = function() {
+        if (brochureModal) {
+            brochureModal.classList.remove('hidden');
+            brochureModal.classList.add('flex');
+        }
+    };
+
+    if (closeBrochureModalBtn && brochureModal) {
+        closeBrochureModalBtn.addEventListener('click', () => {
+            brochureModal.classList.add('hidden');
+            brochureModal.classList.remove('flex');
+        });
+
+        brochureModal.addEventListener('click', (e) => {
+            if (e.target === brochureModal) {
+                brochureModal.classList.add('hidden');
+                brochureModal.classList.remove('flex');
+            }
+        });
+    }
+
+    // 6. Welcome Promo Pop-up & Synchronized 24-Hour Countdown Timer
     const welcomePromoModal = document.getElementById('welcome-promo-modal');
     const closeWelcomePromoBtn = document.getElementById('close-welcome-promo-btn');
     const claimPromoBtn = document.getElementById('claim-promo-btn');
@@ -161,7 +186,7 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 
-    // 6. Form Submit Handler
+    // 7. Form Submit Handler
     if (bookingForm) {
         bookingForm.addEventListener('submit', (e) => {
             e.preventDefault();
