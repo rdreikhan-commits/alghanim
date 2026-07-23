@@ -1,0 +1,30 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Custom Smooth Scroll & Clear Inter Font */
+html {
+    scroll-behavior: smooth;
+    font-family: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+}
+
+/* Glassmorphism Utility in Black & Silver */
+.glass-panel {
+    background: rgba(18, 18, 18, 0.85);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+/* Swiper Custom Pagination Style (Silver & White) */
+.swiper-pagination-bullet {
+    background: #4b5563 !important;
+    opacity: 0.6;
+}
+
+.swiper-pagination-bullet-active {
+    background: #ffffff !important;
+    width: 24px !important;
+    border-radius: 8px !important;
+    opacity: 1;
+}
